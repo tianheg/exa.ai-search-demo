@@ -1,0 +1,33 @@
+{
+  "name": "exa-ai-search-demo",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently 'npm:dev:*'",
+    "dev:be": "export NODE_ENV=development && nodemon . ",
+    "dev:fe": "vite dev",
+    "build": "vite build",
+    "lint": "biome check --apply ."
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "daisyui": "^4.11.1",
+    "fastify": "^4.27.0",
+    "node-fetch": "^3.3.2",
+    "pino-pretty": "^11.1.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.1",
+    "@types/bun": "latest",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.8"
+  }
+}
